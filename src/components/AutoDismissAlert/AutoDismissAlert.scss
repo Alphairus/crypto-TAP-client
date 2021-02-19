@@ -1,3 +1,7 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+
+
 .alert {
   align-items: center;
   animation: .5s ease-in-out 0s 1 light-bounce-in;
@@ -38,4 +42,11 @@
     opacity: 1;
     transform: translateY(0%);
   }
+}
+
+.containerAlerts{
+  text-size: 10px;
+    font-family: 'Gorditas', cursive;
+    -webkit-text-stroke: .33px rgb(0, 0, 0);
+    outline-color: 10px solid black;
 }
