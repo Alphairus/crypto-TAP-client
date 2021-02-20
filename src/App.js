@@ -13,11 +13,10 @@ import SignIn from './components/SignIn/SignIn'
 import SignOut from './components/SignOut/SignOut'
 import ChangePassword from './components/ChangePassword/ChangePassword'
 import CoinsCreate from './components/Coins/CoinsCreate'
-import CoinIndex from './components/Coins/CoinIndex'
-import CoinShow from './components/Coins/CoinShow'
-import UpdateCoin from './components/Coins/CoinEdit'
-import Landing from './components/Landing/Landing'
-
+// import CoinIndex from './components/Coins/CoinIndex'
+// import CoinShow from './components/Coins/CoinShow'
+// import UpdateCoin from './components/Coins/CoinEdit'
+// import Landing from './components/Landing/Landing'
 
 class App extends Component {
   // Add a constructor to initialize state for our App

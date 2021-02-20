@@ -13,8 +13,8 @@ class CoinsCreate extends Component {
       coin: {
         name: '',
         ticker: '',
-        blockchain: '',
-        },
+        blockchain: ''
+      },
       // createdId will be null, until we successfully create an coin
       createdId: null
     }

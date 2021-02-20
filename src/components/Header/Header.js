@@ -5,7 +5,7 @@ import './Header.scss'
 
 const authenticatedOptions = (
   <Fragment>
-    <Nav.Link href="#create-coin">Create A Coin List!</Nav.Link
+    <Nav.Link href="#create-coin">Create A Coin List!</Nav.Link>
     <Nav.Link href="#change-password">Change Password</Nav.Link>
     <Nav.Link href="#sign-out">Sign Out</Nav.Link>
   </Fragment>
@@ -28,11 +28,10 @@ const alwaysOptions = (
 const Header = ({ user }) => (
   <main className='testing'>
     <Navbar expand="md">
-      // <Navbar bg="primary" variant="dark" expand="md">
-      //   <Navbar.Brand href="#">
+      {/* <Navbar.Brand href="#"> */}
       crypto-TAP <span>&nbsp;&nbsp;</span>
-      {/*</Navbar.Brand> */}
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      {/* </Navbar.Brand> */}
+      <Navbar.Toggle aria-controls="basic-navbar-nav"/>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           { user && <span className="navbar-text mr-2">Welcome, {user.email}</span>}

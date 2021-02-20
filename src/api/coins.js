@@ -13,7 +13,7 @@ export const coinCreate = (coin, user) => {
     url: apiUrl + '/coins',
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${user.token}`'
+      'Authorization': `Bearer ${user.token}`
     },
     data: { coin: coin }
   })
