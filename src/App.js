@@ -3,6 +3,7 @@ import React, { Component, Fragment } from 'react'
 import { Route } from 'react-router-dom'
 // from the uuid package and import the fourth version of uuid, call it `uuid`
 import { v4 as uuid } from 'uuid'
+import './App.scss'
 
 // Import components
 import AuthenticatedRoute from './components/AuthenticatedRoute/AuthenticatedRoute'
@@ -13,10 +14,10 @@ import SignIn from './components/SignIn/SignIn'
 import SignOut from './components/SignOut/SignOut'
 import ChangePassword from './components/ChangePassword/ChangePassword'
 import CoinsCreate from './components/Coins/CoinsCreate'
-// import CoinIndex from './components/Coins/CoinIndex'
-// import CoinShow from './components/Coins/CoinShow'
-// import UpdateCoin from './components/Coins/CoinEdit'
-// import Landing from './components/Landing/Landing'
+import CoinIndex from './components/Coins/CoinIndex'
+import CoinShow from './components/Coins/CoinShow'
+import UpdateCoin from './components/Coins/CoinEdit'
+import Landing from './components/Landing/Landing'
 
 class App extends Component {
   // Add a constructor to initialize state for our App
@@ -101,6 +102,18 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} path='/create-coin' render={() => (
             <CoinsCreate msgAlert={this.msgAlert} user={user} />
+          )} />
+          <Route user={user} exact path='/coins' render={() => (
+            <CoinIndex msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} path='/coins/:id' render={() => (
+            <CoinShow msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} path='/update-coin/:id' render={() => (
+            <UpdateCoin msgAlert={this.msgAlert} user={user} />
+          )} />
+          <Route user={user} exact path='/' render={() => (
+            <Landing user={user} />
           )} />
         </main>
       </Fragment>

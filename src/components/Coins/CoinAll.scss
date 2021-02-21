@@ -1,17 +1,15 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Gorditas&display=swap');
 
-
-
-#coinsDiv1{
+  #coinsDiv1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: 'Gorditas', cursive;
     text-align: center;
-
 }
-.showCoinDiv{
+
+  .showCoinDiv{
     display: flex;
     flex-direction: column;
     // justify-content: center;
@@ -23,15 +21,14 @@
     font-family: 'Gorditas', cursive;
     min-width: 70%;
     height: 90vh;
-
 }
 
-label{
-color: rgb(102, 23, 23);
+  label{
+    color: rgb(102, 23, 23);
     justify-content: center;
    -webkit-text-stroke: 1px rgb(2, 0, 0);
 }
-.createForm {
+  .createForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +37,7 @@ color: rgb(102, 23, 23);
     text-align: center;
     // border: solid 1px rgb(12, 5, 5);
     // box-shadow: 0px 10px 25px 1px rgb(54, 20, 18);
-    }
+}
    .submitBtn, .updateBtn, .deleteBtn , .a{
         width: fit-content;
         flex-direction: column;
@@ -52,62 +49,61 @@ color: rgb(102, 23, 23);
         border: 1px solid black;
         color: white;
 }
-    .submitOpen{
+  .submitOpen{
         display: flex;
         justify-content: center;
-    }
-    ul{
+  }
+
+  ul{
 // border: solid 1px rgb(80, 24, 24);
 box-shadow: 0px 10px 25px 1px rgb(54, 20, 18);
+}
 
-    }
-    .createh3, {
-        color: white;
-        -webkit-text-stroke: 1px black;
-        display: flex;
-        // border: 1px solid (255, 124, 124);
-        font-size: 60px ;
-        text-align: center;
-        justify-content: center;
-        // text-shadow:  8px 9px 2px rgb(88, 19, 19);
-        margin-bottom: 10vh;
-    }
-    .coinDiv1 , .coinEdit, .updateH2{
+  .createh3, {
+      color: white;
+      -webkit-text-stroke: 1px black;
+      display: flex;
+      // border: 1px solid (255, 124, 124);
+      font-size: 60px ;
+      text-align: center;
+      justify-content: center;
+      // text-shadow:  8px 9px 2px rgb(88, 19, 19);
+      margin-bottom: 10vh;
+}
+
+  .coinDiv1 , .coinEdit, .updateH2{
 display: flex;
 flex-direction: column;
 justify-content: center;
 text-align: center;
+}
 
+  .updateForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color:rgb(243, 233, 233);
+      -webkit-text-stroke: 1px rgb(2, 0, 0);
+      font-size: 60px;
+      font-family: 'Gorditas', cursive;
+      text-shadow:  8px 9px 2px rgb(88, 19, 19);
+}
+  .coinsDiv2{
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      margin: auto;
+      width: fit-content;
+}
 
-    }
-    .updateForm {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color:rgb(243, 233, 233);
-        -webkit-text-stroke: 1px rgb(2, 0, 0);
-        font-size: 60px;
-        font-family: 'Gorditas', cursive;
-        text-shadow:  8px 9px 2px rgb(88, 19, 19);
+  input{
+    display: flex;
+    margin: auto;
+}
 
-    }
-
-    .coinsDiv2{
-        display: flex;
-        flex-direction: column;
-        font-size: 20px;
-        margin: auto;
-        width: fit-content;
-    }
-
-    input{
-display: flex;
-margin: auto;
-
-    }
-    .coinType {
-color: white;
-    }
+  .coinType {
+    color: white;
+  }
 
     // .testTitle {
     //     border: 10px solid black;
