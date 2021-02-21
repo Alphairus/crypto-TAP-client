@@ -67,7 +67,7 @@ class UpdateCoin extends Component {
       // updatedField is the 3rd arg (comes after the state so it overrides the state values)
       // const newBook = Object.assign({}, this.state.book, updatedField)
 
-      return { coin: newCoin}
+      return { coin: newCoin }
     })
   }
 

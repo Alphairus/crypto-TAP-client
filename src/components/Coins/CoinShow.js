@@ -58,7 +58,6 @@ class CoinShow extends Component {
 
   render () {
     let coinJsx
-    const { msgAlert, user } = this.props
     const { coin, deleted } = this.state
 
     if (deleted) {
@@ -80,7 +79,7 @@ class CoinShow extends Component {
         <h3 className='coinType'>{coin.ticker}</h3>
         <h3 className='coinType'>{coin.blockchain}</h3>
         <button onClick={this.deleteCoin} className='submitBtn'>Delete Coin</button>  <button className='submitBtn'><Link to={`/update-coin/${coin._id}`}>Update Coin</Link></button>
-          {deleted ? <Redirect to="/coins"/> : coinJsx}
+        {deleted ? <Redirect to="/coins"/> : coinJsx}
       </div>
     )
   }

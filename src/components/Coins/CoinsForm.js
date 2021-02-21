@@ -30,8 +30,6 @@ const CoinsForm = ({ coin, handleSubmit, handleChange }) => (
       defaultValue={coin.blockchain}
       onChange={handleChange}
     />
-
-    />
     <div className='submitOpen'>
       <button type='submit' className='submitBtn'>Submit</button>
     </div>
