@@ -14,7 +14,7 @@ export const coinIndex = user => {
 
 export const coinCreate = (coin, user) => {
   return axios({
-    url: apiUrl + '/fits',
+    url: apiUrl + '/coins',
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${user.token}`
