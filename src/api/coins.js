@@ -4,13 +4,17 @@ import axios from 'axios'
 export const coinIndex = user => {
   return axios({
     url: apiUrl + '/coins',
-    method: 'GET'
+    method: 'GET',
+    headers: {
+      // we need the user, so we have access to their token
+      'Authorization': `Bearer ${user.token}`
+    }
   })
 }
 
 export const coinCreate = (coin, user) => {
   return axios({
-    url: apiUrl + '/coins',
+    url: apiUrl + '/fits',
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${user.token}`
@@ -22,6 +26,19 @@ export const coinCreate = (coin, user) => {
 export const coinShow = (id, user) => {
   return axios({
     url: apiUrl + '/coins/' + id,
-    method: 'GET'
+    method: 'GET',
+    headers: {
+      'Authorization': `Bearer ${user.token}`
+    }
+  })
+}
+export const coinUpdate = (id, coin, user) => {
+  return axios({
+    url: apiUrl + '/coins/' + id,
+    method: 'PATCH',
+    headers: {
+      'Authorization': `Bearer ${user.token}`
+    },
+    data: { coin: coin }
   })
 }

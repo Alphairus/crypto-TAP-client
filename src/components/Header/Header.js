@@ -5,6 +5,8 @@ import './Header.scss'
 
 const authenticatedOptions = (
   <Fragment>
+    <Nav.Link href="#create-coin">Create-Coin</Nav.Link>
+    <Nav.Link href="#coins">Coins</Nav.Link>
     <Nav.Link href="#change-password">Change Password</Nav.Link>
     <Nav.Link href="#sign-out">Sign Out</Nav.Link>
   </Fragment>
@@ -20,9 +22,6 @@ const unauthenticatedOptions = (
 const alwaysOptions = (
   <Fragment>
     <Nav.Link href="#/">Home</Nav.Link>
-    <Nav.Link href="#coins">Coins</Nav.Link>
-    <Nav.Link href="#create-coin">Create-Coin</Nav.Link>
-    <Nav.Link href="#advanced">Advanced</Nav.Link>
   </Fragment>
 )
 

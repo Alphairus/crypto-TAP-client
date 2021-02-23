@@ -5,6 +5,7 @@ import { Redirect, withRouter } from 'react-router-dom'
 // import axios & apiConfig
 import axios from 'axios'
 import apiUrl from '../../apiConfig'
+import Button from 'react-bootstrap/Button'
 
 // class
 class UpdateCoin extends Component {
@@ -72,14 +73,22 @@ class UpdateCoin extends Component {
   }
 
   render () {
-    if (this.state.updated) {
-      return <Redirect to={`{/coins/${this.props.match.params.id}}`}/>
+    const { coin, updated } = this.state
+    if (!coin) {
+      return (
+        <div>
+          <h2>Coin Update!</h2>
+        </div>
+      )
+    }
+    if (updated) {
+      return <Redirect to={'/coins'} />
     }
     return (
       <main className='updatePage'>
         <Fragment>
-          <h2 className='updateForm'>Update an Coin</h2>
           <form onSubmit={this.handleSubmit} className='coinsDiv2'>
+            <h2 className='updateForm'>Update an Coin</h2>
             <input
               name="name"
               type="text"
@@ -101,7 +110,12 @@ class UpdateCoin extends Component {
               value={this.state.coin.blockchain}
               onChange={this.handleInputChange}
             />
-            <button type="submit" className='submitBtn'>Submit</button>
+            <Button
+              type="submit"
+              variant="primary"
+            >
+              Submit
+            </Button>
           </form>
         </Fragment>
       </main>

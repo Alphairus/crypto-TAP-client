@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button'
 import './CoinAll.scss'
 
 const CoinsForm = ({ coin, handleSubmit, handleChange }) => (
@@ -31,7 +32,12 @@ const CoinsForm = ({ coin, handleSubmit, handleChange }) => (
       onChange={handleChange}
     />
     <div className='submitOpen'>
-      <button type='submit' className='submitBtn'>Submit</button>
+      <Button
+        variant="primary"
+        type='submit'
+      >
+        Submit
+      </Button>
     </div>
   </form>
 )

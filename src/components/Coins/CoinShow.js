@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import Spinner from 'react-bootstrap/Spinner'
 // import withRouter so we have access to the match route prop
 import { withRouter, Redirect, Link } from 'react-router-dom'
 import { coinShow } from '../../api/coins'
 import apiUrl from '../../apiConfig'
 import axios from 'axios'
+import Button from 'react-bootstrap/Button'
 
 class CoinShow extends Component {
   constructor (props) {
@@ -19,8 +19,6 @@ class CoinShow extends Component {
 
   componentDidMount () {
     const { user, match, msgAlert } = this.props
-    console.log(user)
-    console.log(match)
     // make a request for a single coin
     coinShow(match.params.id, user)
     // set the coin state to the coin we got back in the resopnse's data
@@ -57,7 +55,7 @@ class CoinShow extends Component {
   }
 
   render () {
-    let coinJsx
+    // let coinJsx
     const { coin, deleted } = this.state
 
     if (deleted) {
@@ -65,24 +63,34 @@ class CoinShow extends Component {
     }
     // if we don't have a coin list yet
     if (!coin) {
-      // A Spinner is just a nice loading message we get from react bootstrap
       return (
-        <Spinner animation="border" role="status">
-          <span className="sr-only">Loading...</span>
-        </Spinner>
+        <div>
+          <h2>Make a Coin!</h2>
+        </div>
       )
     }
 
     return (
-      <div>
-        <h3>{coin.name}</h3>
-        <h4>Ticker: {coin.ticker}</h4>
-        <h4>Blockchain: {coin.blockchain}</h4>
-        <button onClick={this.deleteCoin}>Delete Coin</button>
-        <button>
-          <Link to={`/update-coin/${coin._id}`}>Update coin</Link>
-        </button>
-        {deleted ? <Redirect to="/coins"/> : coinJsx}
+      <div className="showCoinDiv mx-auto">
+        <h3 className='coinEdit'>{coin.name}</h3>
+        <h3 className='openType'>{coin.ticker}</h3>
+        <h3 className='openType'>{coin.blockchain}</h3>
+        <div className='centerBtn'>
+          <Button
+            onClick={this.deleteCoin}
+            type="submit"
+            variant="primary"
+          >
+          DELETE
+          </Button>
+          <Button
+            className="updateBtn"
+            type="submit"
+            variant="primary"
+          >
+            <Link className='updateTxt' to={`/coins/${coin.id}/edit`}>UPDATE</Link>
+          </Button>
+        </div>
       </div>
     )
   }

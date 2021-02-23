@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import CoinsForm from './CoinsForm'
 import { Redirect } from 'react-router-dom'
+import CoinsForm from './CoinsForm'
+
 import { coinCreate } from '../../api/coins'
-import './CoinAll.scss'
+// import './CoinAll.scss'
 
 class CoinsCreate extends Component {
   constructor (props) {
@@ -67,14 +68,12 @@ class CoinsCreate extends Component {
 
     // if the coin has been created and we sits id
     if (createdId) {
-      console.log(createdId)
       // redirect to the coins show page
-      return <Redirect to={`/coins/${createdId}`} />
+      return <Redirect to='/coins/' />
     }
 
     return (
-      <div id='coinsDiv1'>
-        <h3 className='coinh3'>Create Coin</h3>
+      <div>
         <CoinsForm
           coin={coin}
           handleChange={this.handleChange}

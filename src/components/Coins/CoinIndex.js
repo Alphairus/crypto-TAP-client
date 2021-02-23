@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import Spinner from 'react-bootstrap/Spinner'
 import { coinIndex } from '../../api/coins'
-// import './CoinAll.scss'
 
 class CoinIndex extends Component {
   constructor (props) {
@@ -11,7 +9,7 @@ class CoinIndex extends Component {
     // keep track of the coins in our application
     // initially they will be null until we have fetched them from the api
     this.state = {
-      coins: null
+      coins: []
     }
   }
 
@@ -43,28 +41,26 @@ class CoinIndex extends Component {
   render () {
     // destructure our coins state
     const { coins } = this.state
-    console.log(coins)
     // if we haven't fetched any coins yet from the API
-    if (!coins) {
-      // A Spinner is just a nice loading message we get from react bootstrap
+    if (coins.length === 0) {
       return (
-        <Spinner animation="border" role="status">
-          <span className="sr-only">Loading...</span>
-        </Spinner>
+        <div>
+          <h2>My Coin Page</h2>
+        </div>
       )
     }
 
     const coinJsx = coins.map(coin => (
-      <Link to={`/coins/${coin._id}`} key={coin._id}>
-        <li>
+      <li key={coin.id}>
+        <Link to={`/coins/${coin.id}`} name={coin.name}>
           {coin.name}
-        </li>
-      </Link>
+        </Link>
+      </li>
     ))
 
     return (
-      <div>
-        <h3>Coins</h3>
+      <div className='coinDiv1'>
+        <h3 className='createh3'>MY FIT$</h3>
         <ul>
           {coinJsx}
         </ul>
