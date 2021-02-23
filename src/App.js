@@ -96,16 +96,16 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
-          <AuthenticatedRoute user={user} path='/create-coin' render={() => (
+          <Route user={user} path='/create-coin' render={() => (
             <CoinsCreate msgAlert={this.msgAlert} user={user} />
           )} />
           <Route user={user} exact path='/coins' render={() => (
             <CoinIndex msgAlert={this.msgAlert} user={user} />
           )} />
-          <AuthenticatedRoute user={user} path='/coins/:id' render={() => (
+          <Route user={user} path='/coins/:id' render={() => (
             <CoinShow msgAlert={this.msgAlert} user={user} />
           )} />
-          <AuthenticatedRoute user={user} path='/update-coin/:id' render={() => (
+          <Route user={user} path='/update-coin/:id' render={() => (
             <UpdateCoin msgAlert={this.msgAlert} user={user} />
           )} />
           <Route user={user} exact path='/' render={() => (

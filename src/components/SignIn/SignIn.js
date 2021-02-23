@@ -51,9 +51,7 @@ class SignIn extends Component {
     return (
       <main className="signInRow">
         <div>
-          <div>
-            <h3 className='h3'>Sign In</h3>
-          </div>
+          <h3 className='h3'>Sign In</h3>
           <Form onSubmit={this.onSignIn}>
             <Form.Group controlId="email">
               <Form.Label>Email address</Form.Label>

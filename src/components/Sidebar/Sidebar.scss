@@ -1,7 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Gorditas&display=swap');
 
-div.sidebar{
+.sidebar{
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -9,10 +8,10 @@ div.sidebar{
 margin: 0px 2px;
 background-image:url(https://thumbs.dreamstime.com/t/wood-texture-background-brown-and-yellow-color-background-woodgrain-texture-180815201.jpg) ;
   transition: right 1s ease-out;
-height: fit-content;
-border-radius: 10px ;
-border: 1px solid rgb(56, 15, 15);
-font-family: 'Gorditas', cursive;
-box-shadow: inset 0px 10px 100px 10px rgba(87, 33, 33, 0.863);
-text-shadow: .8px .1px rgb(255, 253, 253);
-}
+  border: 2px outset rgba(78, 32, 32, 0.863);
+  height: fit-content;
+  font-family: 'Oswald', sans-serif;
+  box-shadow: inset 0px 0px 100px 0px rgba(78, 32, 32, 0.863);
+  // -webkit-text-stroke: .8px rgb(241, 228, 228);
+  text-shadow: .33px .4px 1px white;
+  }

@@ -6,6 +6,7 @@ import messages from '../AutoDismissAlert/messages'
 
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import './SignUp.scss'
 
 class SignUp extends Component {
   constructor (props) {
@@ -50,9 +51,9 @@ class SignUp extends Component {
     const { email, password, passwordConfirmation } = this.state
 
     return (
-      <div className="row">
-        <div className="col-sm-10 col-md-8 mx-auto mt-5">
-          <h3>Sign Up</h3>
+      <div className="signUpBoi">
+        <div>
+          <h3 className='signUph3'>Sign Up</h3>
           <Form onSubmit={this.onSignUp}>
             <Form.Group controlId="email">
               <Form.Label>Email address</Form.Label>
@@ -87,12 +88,15 @@ class SignUp extends Component {
                 onChange={this.handleChange}
               />
             </Form.Group>
-            <Button
-              variant="primary"
-              type="submit"
-            >
+            <h4>
+              <Button
+                variant="primary"
+                type="submit"
+                id="submitBtn"
+              >
               Submit
-            </Button>
+              </Button>
+            </h4>
           </Form>
         </div>
       </div>

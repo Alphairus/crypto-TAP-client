@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import Spinner from 'react-bootstrap/Spinner'
+import Spinner from 'react-bootstrap/Spinner'
 // import withRouter so we have access to the match route prop
 import { withRouter, Redirect, Link } from 'react-router-dom'
 import { coinShow } from '../../api/coins'
@@ -67,9 +67,9 @@ class CoinShow extends Component {
     if (!coin) {
       // A Spinner is just a nice loading message we get from react bootstrap
       return (
-        <div>
-          <h2>There are no coins! Go make one.</h2>
-        </div>
+        <Spinner animation="border" role="status">
+          <span className="sr-only">Loading...</span>
+        </Spinner>
       )
     }
 
