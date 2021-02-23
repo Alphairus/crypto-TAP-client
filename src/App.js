@@ -84,8 +84,11 @@ class App extends Component {
           />
         ))}
         <main className="container">
-          <Route path='/sign-up' render={() => (
-            <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />
+          <Route path='/' render={() => (
+            <LandingPage user={user}/>
+          )} />
+         <Route path='/sign-up' render={() => (
+          <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
           <Route path='/sign-in' render={() => (
             <SignIn msgAlert={this.msgAlert} setUser={this.setUser} />
@@ -112,9 +115,9 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/update-coin/:id' render={() => (
             <UpdateCoin msgAlert={this.msgAlert} user={user} />
           )} />
-          <Route user={user} exact path='/' render={() => (
+          {/*<Route user={user} exact path='/' render={() => (
             <Landing user={user} />
-          )} />
+          )} /> */}
         </main>
       </Fragment>
     )

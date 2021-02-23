@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
 .testing {
-display: flex;
-color: rgb(0, 0, 0);
-font-family: 'Yusei Magic', sans-serif;
-font-size: 48px;
--webkit-text-stroke: 1px rgb(255, 246, 246);
-border-radius: 3px;
-background-image:
-		linear-gradient(90deg, rgb(34, 167, 13) 30px, white 30px),
-		linear-gradient(90deg, white 30px,  rgb(37, 191, 12) 30px),
-		linear-gradient(90deg,  rgb(42, 249, 9) 30px, white 30px);
+	display: flex;
+	color: rgb(0, 0, 0);
+	font-family: 'Yusei Magic', sans-serif;
+	font-size: 48px;
+	-webkit-text-stroke: 1px rgb(255, 246, 246);
+	border-radius: 3px;
+	background-image:
+	linear-gradient(90deg, rgb(34, 167, 13) 30px, white 30px),
+	linear-gradient(90deg, white 30px,  rgb(37, 191, 12) 30px),
+	linear-gradient(90deg,  rgb(42, 249, 9) 30px, white 30px);
 	background-position: 0 0, 0 30px, 0 60px;
 	background-repeat: repeat-x;
 	background-size: 60px 30px, 60px 30px, 60px 30px;
@@ -38,11 +38,11 @@ background-image:
     font-family: 'Yusei Magic', sans-serif;
     -webkit-text-stroke: .81px rgb(0, 0, 0);
 }
-.navbar-text.mr-2{
-	font-size: 20px;
-	-webkit-text-stroke: 1px black;
-}
-.navbar-text.mr-2{
-	font-size: 20px;
-	-webkit-text-stroke: 1px black;
-}
+// .navbar-text.mr-2{
+// 	font-size: 20px;
+// 	-webkit-text-stroke: 1px black;
+// }
+// .navbar-text.mr-2{
+// 	font-size: 20px;
+// 	-webkit-text-stroke: 1px black;
+// }

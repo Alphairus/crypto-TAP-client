@@ -1,0 +1,39 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Gorditas&display=swap');
+
+
+.signUph3, .openingh3 , h3.h3{
+display: flex;
+justify-content: center;
+font-family: 'Gorditas', cursive;
+font-size: 40px;
+
+}
+.signUpBoi{
+        display: flex;
+        font-size: 40px;
+        justify-content: center;
+        max-width: 30%;
+        max-height: 50%;
+        font-family: 'Gorditas', cursive;
+        text-align: center;
+        margin: auto;
+        // box-shadow: 0px 10px 25px 1px rgb(54, 20, 18);
+        }
+    #submitBtn.btn.btn-primary{
+            display: flex;
+            justify-content: center;
+           -webkit-text-stroke: 1px rgb(2, 0, 0);
+            // background : rgb(252, 0, 155);
+            font-size: 25px;
+            border: 1px solid white;
+    }
+    //Figure out why you needed h4
+    h4{
+        display: flex;
+        justify-content: center;
+    }
+    .form-group{
+
+margin: -10px 0px;
+    }
