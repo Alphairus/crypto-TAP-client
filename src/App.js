@@ -90,10 +90,6 @@ class App extends Component {
           <Route path='/sign-in' render={() => (
             <SignIn msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
-          {/* An AuthenticatedRoute is used the same way as a normal route
-            except it has a `user` prop we must pass it. The AuthenticatedRoute
-            will show if the user is not null. If the user is null, it will redirect
-            to the home page */}
           <AuthenticatedRoute user={user} path='/sign-out' render={() => (
             <SignOut msgAlert={this.msgAlert} clearUser={this.clearUser} user={user} />
           )} />

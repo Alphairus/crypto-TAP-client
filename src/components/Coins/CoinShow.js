@@ -74,11 +74,14 @@ class CoinShow extends Component {
     }
 
     return (
-      <div className="showCoinDiv">
-        <h3 className='coinEdit'>{coin.name}</h3>
-        <h3 className='coinType'>{coin.ticker}</h3>
-        <h3 className='coinType'>{coin.blockchain}</h3>
-        <button onClick={this.deleteCoin} className='submitBtn'>Delete Coin</button>  <button className='submitBtn'><Link to={`/update-coin/${coin._id}`}>Update Coin</Link></button>
+      <div>
+        <h3>{coin.name}</h3>
+        <h4>Ticker: {coin.ticker}</h4>
+        <h4>Blockchain: {coin.blockchain}</h4>
+        <button onClick={this.deleteCoin}>Delete Coin</button>
+        <button>
+          <Link to={`/update-coin/${coin._id}`}>Update coin</Link>
+        </button>
         {deleted ? <Redirect to="/coins"/> : coinJsx}
       </div>
     )

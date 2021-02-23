@@ -90,7 +90,7 @@ class UpdateCoin extends Component {
             <input
               name="ticker"
               type="text"
-              placeholder="TiCKER"
+              placeholder="TICKER"
               value={this.state.coin.ticker}
               onChange={this.handleInputChange}
             />
