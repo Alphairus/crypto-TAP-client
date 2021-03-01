@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import CoinsForm from './CoinsForm'
-
 import { coinCreate } from '../../api/coins'
 // import './CoinAll.scss'
 

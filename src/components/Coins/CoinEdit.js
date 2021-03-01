@@ -37,7 +37,7 @@ class UpdateCoin extends Component {
     event.preventDefault()
     const { user, match } = this.props
     axios({
-      method: 'patch',
+      method: 'PATCH',
       url: `${apiUrl}/coins/${match.params.id}`,
       headers: {
         'Authorization': `Bearer ${user.token}`
@@ -85,9 +85,9 @@ class UpdateCoin extends Component {
       return <Redirect to={'/coins'} />
     }
     return (
-      <main className='updatePage'>
+      <main className='updatePage mx-auto'>
         <Fragment>
-          <form onSubmit={this.handleSubmit} className='coinsDiv2'>
+          <form onSubmit={this.handleSubmit} className='coinsDiv2 mx-auto'>
             <h2 className='updateForm'>Update an Coin</h2>
             <input
               name="name"

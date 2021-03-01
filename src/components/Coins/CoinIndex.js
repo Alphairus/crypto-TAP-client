@@ -60,7 +60,7 @@ class CoinIndex extends Component {
 
     return (
       <div className='coinDiv1'>
-        <h3 className='createh3'>MY FIT$</h3>
+        <h3 className='createh3'>COINS</h3>
         <ul>
           {coinJsx}
         </ul>

@@ -31,7 +31,7 @@ const CoinsForm = ({ coin, handleSubmit, handleChange }) => (
       defaultValue={coin.blockchain}
       onChange={handleChange}
     />
-    <div className='submitOpen'>
+    <div className='submitCoin mx-auto'>
       <Button
         variant="primary"
         type='submit'
