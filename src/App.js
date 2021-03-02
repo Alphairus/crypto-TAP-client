@@ -17,7 +17,7 @@ import CoinsCreate from './components/Coins/CoinsCreate'
 import CoinIndex from './components/Coins/CoinIndex'
 import CoinShow from './components/Coins/CoinShow'
 import UpdateCoin from './components/Coins/CoinEdit'
-import Landing from './components/Landing/Landing'
+// import Landing from './components/Landing/Landing'
 
 class App extends Component {
   // Add a constructor to initialize state for our App
@@ -96,20 +96,17 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
-          <Route user={user} path='/create-coin' render={() => (
+          <AuthenticatedRoute user={user} path='/create-coin' render={() => (
             <CoinsCreate msgAlert={this.msgAlert} user={user} />
           )} />
-          <Route user={user} exact path='/coins' render={() => (
+          <AuthenticatedRoute user={user} exact path='/coins' render={() => (
             <CoinIndex msgAlert={this.msgAlert} user={user} />
           )} />
-          <Route user={user} path='/coins/:id' render={() => (
+          <AuthenticatedRoute user={user} path='/coins/:id' render={() => (
             <CoinShow msgAlert={this.msgAlert} user={user} />
           )} />
-          <Route user={user} path='/update-coin/:id' render={() => (
+          <AuthenticatedRoute user={user} path='/update-coin/:id' render={() => (
             <UpdateCoin msgAlert={this.msgAlert} user={user} />
-          )} />
-          <Route user={user} exact path='/' render={() => (
-            <Landing user={user} />
           )} />
         </main>
       </Fragment>

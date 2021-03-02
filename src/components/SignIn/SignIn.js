@@ -6,7 +6,7 @@ import messages from '../AutoDismissAlert/messages'
 
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import './SignIn.scss'
+import '../All.scss'
 
 class SignIn extends Component {
   constructor (props) {
@@ -49,9 +49,9 @@ class SignIn extends Component {
     const { email, password } = this.state
 
     return (
-      <main className="signInRow">
-        <div>
-          <h3 className='h3'>Sign In</h3>
+      <div className="row">
+        <div className="signInRow">
+          <h3>Sign In</h3>
           <Form onSubmit={this.onSignIn}>
             <Form.Group controlId="email">
               <Form.Label>Email address</Form.Label>
@@ -87,7 +87,7 @@ class SignIn extends Component {
             </div>
           </Form>
         </div>
-      </main>
+      </div>
     )
   }
 }

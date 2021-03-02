@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button'
 import './CoinAll.scss'
 
 const CoinsForm = ({ coin, handleSubmit, handleChange }) => (
-  <form className="createForm" onSubmit={handleSubmit}>
+  <form className="createCoinForm" onSubmit={handleSubmit}>
     <label>Name</label>
     <input
       required

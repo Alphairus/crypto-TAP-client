@@ -72,7 +72,7 @@ class CoinsCreate extends Component {
     }
 
     return (
-      <div>
+      <div id='coinsDiv1'>
         <CoinsForm
           coin={coin}
           handleChange={this.handleChange}

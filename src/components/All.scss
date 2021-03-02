@@ -1,0 +1,122 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+
+.navbar{
+    background: rgb(0,126,231);
+    font-family: 'Orbitron', sans-serif;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border: 4px groove rgb(0,126,231);
+    border-radius: 6px;
+    max-height: fit-content;
+
+}
+.navbar-brand, .nav-link{
+    color: white;
+    background-color: rgb(0,126,231);
+    border: 1px solid black;
+    border-radius: 1px solid;
+}
+.signUpForm, .signInRow, .createFitForm ,.changePassForm, .showFitDiv, .fitsDiv2{
+    display: flex;
+    flex-direction:column;
+    margin-top: 10vh;
+    max-width: 250px;
+    margin-bottom : 10vh;
+    min-height: 50vh;
+    justify-content: center;
+    text-shadow: -3px -2px 3px rgb(0, 0, 0);
+    -webkit-text-stroke: .81px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 3px groove black;
+    border-radius: 3px;
+    box-shadow: 1.5px 1.5px 55px black;
+    min-width: fit-content;
+    max-width: 350px;
+    font-family: 'Oi', cursive;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-emphasis-color: white;
+    text-shadow: 1px 1px white;
+    font-family: 'Orbitron', sans-serif;
+
+}
+#root {
+    display: flex ;
+    flex-direction: column;
+  background : url(https://i.imgur.com/rOHr5Qj.jpg);
+  background-size: cover;
+  min-height : 100vh;
+  box-shadow : inset 20px 150px 150px 10px rgb(22, 20, 22);
+background-blend-mode: lighten;
+}
+.showFitDiv {
+    text-align: center;
+
+}
+.fitDiv1, .updatePage .fitsDiv2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fitDiv1{
+    justify-content: flex-start;
+}
+li{
+    border: .5px solid rgb(46, 37, 37);
+    box-shadow: 0px 0px 16px 0px rgb(15, 10, 14);
+    background: url(https://cdn141.picsart.com/305184574199201.jpg?type=webp&to=crop&r=256);
+    text-shadow: -1px -1px 0px rgb(0, 0, 0), 2px 2px 2px whitesmoke;
+    color: rgb(20, 16, 17);
+    font-size: 20px;
+    font-family: 'Oi', cursive;
+    -webkit-text-stroke: 1px #1d0303;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.testingPhoto{
+    max-height: 500px;
+    max-width: 500px;
+}
+img{
+    max-width: 300px;
+    max-height: 300px;
+    box-shadow: 0px 0px 10px 2px black;
+    margin: 2px auto;
+}
+.btn.btn-primary , .submitBtn {
+    border: .5px solid rgb(8, 7, 7);
+    max-width: fit-content;
+}
+.createh3 , h2{
+    font-family: 'Oi', cursive;
+    margin-top: 10px;
+    font-size: 70px;
+    text-shadow: 1px 10px 0px rgb(20, 18, 18);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: .97px rgb(0, 0, 0);
+    border-radius: 2px;
+    padding-top: 20px;
+
+}
+input{
+    font-family: 'Orbitron', sans-serif;
+
+}
+.updateTxt{
+    color: white;
+    -webkit-text-stroke: 1px #000000;
+}
+a{
+    -webkit-text-stroke: .87px #000000;
+}
