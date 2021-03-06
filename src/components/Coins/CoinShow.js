@@ -71,10 +71,10 @@ class CoinShow extends Component {
     }
 
     return (
-      <div className="showCoinDiv mx-auto">
+      <div className='showCoinDiv mx-auto'>
         <h3 className='coinEdit'>{coin.name}</h3>
-        <h3 className='openType'>{coin.ticker}</h3>
-        <h3 className='openType'>{coin.blockchain}</h3>
+        <h3 className='coinType'>{coin.ticker}</h3>
+        <h3 className='coinType'>{coin.blockchain}</h3>
         <div className='centerBtn'>
           <Button
             onClick={this.deleteCoin}
@@ -84,9 +84,9 @@ class CoinShow extends Component {
           DELETE
           </Button>
           <Button
-            className="updateBtn"
-            type="submit"
-            variant="primary"
+            className='updateBtn'
+            type='submit'
+            variant='primary'
           >
             <Link className='updateTxt' to={`/coins/${coin.id}/edit`}>UPDATE</Link>
           </Button>

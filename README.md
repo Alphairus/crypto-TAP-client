@@ -1,5 +1,13 @@
 # Crypto-TAP  
 
+## Getting Started
+1. Fork and clone this repository.
+2. Change into this directory
+3. Create and checkout a new branch.
+4. run npm install
+5. use npm start to run the server and see changes in real time.
+Note: This repo is set to run with the api mentioned above, if you would like to use a different api, make changes to apiConfig.js
+
 ## Planning Story
 I have been involved in the world of cryptocurrency since 2017 and something that
 began as a small habit has become a primary passion of mine, infact; it is what

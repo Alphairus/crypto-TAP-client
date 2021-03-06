@@ -12,13 +12,15 @@
     max-height: fit-content;
 
 }
+
 .navbar-brand, .nav-link{
     color: white;
     background-color: rgb(0,126,231);
     border: 1px solid black;
     border-radius: 1px solid;
 }
-.signUpForm, .signInRow, .createFitForm ,.changePassForm, .showFitDiv, .fitsDiv2{
+
+.signUpForm, .signInRow, .createCoinForm ,.changePassForm, .showCoinDiv, .coinsDiv2{
     display: flex;
     flex-direction:column;
     margin-top: 10vh;
@@ -40,6 +42,7 @@
     padding-top: 10px;
 
 }
+
 .row{
     display: flex;
     justify-content: center;
@@ -49,6 +52,7 @@
     font-family: 'Orbitron', sans-serif;
 
 }
+
 #root {
     display: flex ;
     flex-direction: column;
@@ -58,28 +62,33 @@
   box-shadow : inset 20px 150px 150px 10px rgb(22, 20, 22);
 background-blend-mode: lighten;
 }
-.showFitDiv {
+
+.showCoinDiv {
     text-align: center;
 
 }
-.fitDiv1, .updatePage .fitsDiv2{
+
+.coinDiv1, .updatePage .coinsDiv2{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.fitDiv1{
+
+.coinDiv1{
     justify-content: flex-start;
 }
+
 li{
     border: .5px solid rgb(46, 37, 37);
     box-shadow: 0px 0px 16px 0px rgb(15, 10, 14);
-    background: url(https://cdn141.picsart.com/305184574199201.jpg?type=webp&to=crop&r=256);
+    // background: url(https://cdn141.picsart.com/305184574199201.jpg?type=webp&to=crop&r=256);
     text-shadow: -1px -1px 0px rgb(0, 0, 0), 2px 2px 2px whitesmoke;
     color: rgb(20, 16, 17);
     font-size: 20px;
     font-family: 'Oi', cursive;
     -webkit-text-stroke: 1px #1d0303;
 }
+
 .container{
     display: flex;
     justify-content: center;
@@ -88,17 +97,20 @@ li{
     max-height: 500px;
     max-width: 500px;
 }
+
 img{
     max-width: 300px;
     max-height: 300px;
     box-shadow: 0px 0px 10px 2px black;
     margin: 2px auto;
 }
+
 .btn.btn-primary , .submitBtn {
     border: .5px solid rgb(8, 7, 7);
     max-width: fit-content;
 }
-.createh3 , h2{
+
+.createh3, h2, h3{
     font-family: 'Oi', cursive;
     margin-top: 10px;
     font-size: 70px;
@@ -109,14 +121,17 @@ img{
     padding-top: 20px;
 
 }
+
 input{
     font-family: 'Orbitron', sans-serif;
 
 }
+
 .updateTxt{
     color: white;
     -webkit-text-stroke: 1px #000000;
 }
+
 a{
     -webkit-text-stroke: .87px #000000;
 }
