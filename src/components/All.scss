@@ -5,7 +5,7 @@
 .navbar{
     background: rgb(0,126,231);
     font-family: 'Orbitron', sans-serif;
-    background: rgb(2,0,36);
+    // background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     border: 4px groove rgb(0,126,231);
     border-radius: 6px;
@@ -21,46 +21,47 @@
 }
 
 .signUpForm, .signInRow, .createCoinForm ,.changePassForm, .showCoinDiv, .coinsDiv2{
-    display: flex;
-    flex-direction:column;
-    margin-top: 10vh;
-    max-width: 250px;
-    margin-bottom : 10vh;
-    min-height: 50vh;
-    justify-content: center;
-    text-shadow: -3px -2px 3px rgb(0, 0, 0);
-    -webkit-text-stroke: .81px rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border: 3px groove black;
-    border-radius: 3px;
-    box-shadow: 1.5px 1.5px 55px black;
-    min-width: fit-content;
-    max-width: 350px;
-    font-family: 'Oi', cursive;
-    text-align: center;
-    padding-top: 10px;
+  display: flex;
+  flex-direction:column;
+  margin-top: 10vh;
+  max-width: 250px;
+  margin-bottom : 10vh;
+  min-height: 50vh;
+  justify-content: center;
+  text-shadow: -3px -2px 3px rgb(0, 0, 0);
+  -webkit-text-stroke: .81px rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 3px groove black;
+  border-radius: 3px;
+  box-shadow: 1.5px 1.5px 55px black;
+  background: url(https://picsart.com/i/image-352780600057201);
+  min-width: fit-content;
+  max-width: 350px;
+  font-family: 'Oi', cursive;
+  text-align: center;
+  padding-top: 10px;
 
 }
 
 .row{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    text-emphasis-color: white;
-    text-shadow: 1px 1px white;
-    font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-emphasis-color: white;
+  text-shadow: 1px 1px white;
+  font-family: 'Orbitron', sans-serif;
 
 }
 
 #root {
-    display: flex ;
-    flex-direction: column;
+  display: flex ;
+  flex-direction: column;
   background : url(https://i.imgur.com/rOHr5Qj.jpg);
   background-size: cover;
   min-height : 100vh;
   box-shadow : inset 20px 150px 150px 10px rgb(22, 20, 22);
-background-blend-mode: lighten;
+  background-blend-mode: lighten;
 }
 
 .showCoinDiv {
@@ -68,20 +69,20 @@ background-blend-mode: lighten;
 
 }
 
-.coinDiv1, .updatePage .coinsDiv2{
+.coinsDiv1, .updatePage .coinsDiv2{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.coinDiv1{
+.coinsDiv1{
     justify-content: flex-start;
 }
 
 li{
     border: .5px solid rgb(46, 37, 37);
     box-shadow: 0px 0px 16px 0px rgb(15, 10, 14);
-    // background: url(https://cdn141.picsart.com/305184574199201.jpg?type=webp&to=crop&r=256);
+    background: url(https://picsart.com/i/image-352780600057201);
     text-shadow: -1px -1px 0px rgb(0, 0, 0), 2px 2px 2px whitesmoke;
     color: rgb(20, 16, 17);
     font-size: 20px;
@@ -110,7 +111,7 @@ img{
     max-width: fit-content;
 }
 
-.createh3, h2, h3{
+.createh3, h2{
     font-family: 'Oi', cursive;
     margin-top: 10px;
     font-size: 70px;

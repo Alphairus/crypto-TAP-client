@@ -1,9 +1,9 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
-import './CoinAll.scss'
 
 const CoinsForm = ({ coin, handleSubmit, handleChange }) => (
   <form className="createCoinForm" onSubmit={handleSubmit}>
+    <h3>Track a Coin</h3>
     <label>Name</label>
     <input
       required

@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
 import CoinsForm from './CoinsForm'
+import { Redirect } from 'react-router-dom'
 import { coinCreate } from '../../api/coins'
-// import './CoinAll.scss'
 
-class CoinsCreate extends Component {
+class CoinCreate extends Component {
   constructor (props) {
     super(props)
 
@@ -28,8 +27,7 @@ class CoinsCreate extends Component {
     // create an coin, pass it the coin data and the user for its token
     coinCreate(coin, user)
       // set the createdId to the id of the coin we just created
-      .then(res => this.setState({ createdId:
-        res.data.coin._id }))
+      .then(res => this.setState({ createdId: res.data.coin.id }))
       .then(() => msgAlert({
         heading: 'Created coin Succesfully',
         message: 'coin has been created successfully. Now viewing the coin.',
@@ -55,7 +53,7 @@ class CoinsCreate extends Component {
       return {
         // set the coin state, to what it used to be (...state.coin)
         // but replace the property with `name` to its current `value`
-        // ex. name could be `name` or `director`
+        // ex. name could be `name` or `director` movie lesson ex.
         coin: { ...state.coin, [event.target.name]: event.target.value }
       }
     })
@@ -83,4 +81,4 @@ class CoinsCreate extends Component {
   }
 }
 
-export default CoinsCreate
+export default CoinCreate

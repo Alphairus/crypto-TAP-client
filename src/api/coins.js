@@ -6,7 +6,6 @@ export const coinIndex = user => {
     url: apiUrl + '/coins',
     method: 'GET',
     headers: {
-      // we need the user, so we have access to their token
       'Authorization': `Bearer ${user.token}`
     }
   })

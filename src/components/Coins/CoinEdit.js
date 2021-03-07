@@ -1,8 +1,6 @@
 // imports
 import React, { Component, Fragment } from 'react'
 import { Redirect, withRouter } from 'react-router-dom'
-
-// import axios & apiConfig
 import axios from 'axios'
 import apiUrl from '../../apiConfig'
 import Button from 'react-bootstrap/Button'
@@ -77,7 +75,7 @@ class UpdateCoin extends Component {
     if (!coin) {
       return (
         <div>
-          <h2>Coin Update!</h2>
+          <h2>Please make a Coin!</h2>
         </div>
       )
     }
@@ -88,7 +86,7 @@ class UpdateCoin extends Component {
       <main className='updatePage mx-auto'>
         <Fragment>
           <form onSubmit={this.handleSubmit} className='coinsDiv2 mx-auto'>
-            <h2 className='updateForm'>Update an Coin</h2>
+            <h3 className='updateForm'>Update a Coin</h3>
             <input
               name="name"
               type="text"

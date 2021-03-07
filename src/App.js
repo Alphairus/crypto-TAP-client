@@ -3,17 +3,17 @@ import React, { Component, Fragment } from 'react'
 import { Route } from 'react-router-dom'
 // from the uuid package and import the fourth version of uuid, call it `uuid`
 import { v4 as uuid } from 'uuid'
-import './App.scss'
 
 // Import components
 import AuthenticatedRoute from './components/AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from './components/AutoDismissAlert/AutoDismissAlert'
 import Header from './components/Header/Header'
+// import Footer from './components/Footer/Footer'
 import SignUp from './components/SignUp/SignUp'
 import SignIn from './components/SignIn/SignIn'
 import SignOut from './components/SignOut/SignOut'
 import ChangePassword from './components/ChangePassword/ChangePassword'
-import CoinsCreate from './components/Coins/CoinsCreate'
+import CoinCreate from './components/Coins/CoinCreate'
 import CoinIndex from './components/Coins/CoinIndex'
 import CoinShow from './components/Coins/CoinShow'
 import UpdateCoin from './components/Coins/CoinEdit'
@@ -93,19 +93,19 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/sign-out' render={() => (
             <SignOut msgAlert={this.msgAlert} clearUser={this.clearUser} user={user} />
           )} />
-          <AuthenticatedRoute user={user} path='/change-password' render={() => (
+          <AuthenticatedRoute user={user} exact path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
           <AuthenticatedRoute user={user} path='/create-coin' render={() => (
-            <CoinsCreate msgAlert={this.msgAlert} user={user} />
+            <CoinCreate msgAlert={this.msgAlert} user={user} />
           )} />
           <AuthenticatedRoute user={user} exact path='/coins' render={() => (
             <CoinIndex msgAlert={this.msgAlert} user={user} />
           )} />
-          <AuthenticatedRoute user={user} path='/coins/:id' render={() => (
+          <AuthenticatedRoute user={user} exact path='/coins/:id' render={() => (
             <CoinShow msgAlert={this.msgAlert} user={user} />
           )} />
-          <AuthenticatedRoute user={user} path='/update-coin/:id' render={() => (
+          <AuthenticatedRoute user={user} path='/coins/:id/edit' render={() => (
             <UpdateCoin msgAlert={this.msgAlert} user={user} />
           )} />
         </main>

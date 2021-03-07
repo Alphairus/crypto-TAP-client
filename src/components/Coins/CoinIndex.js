@@ -50,7 +50,7 @@ class CoinIndex extends Component {
       )
     }
 
-    const coinJsx = coins.map(coin => (
+    const coinJsx = this.state.coins.map(coin => (
       <li key={coin.id}>
         <Link to={`/coins/${coin.id}`} name={coin.name}>
           {coin.name}

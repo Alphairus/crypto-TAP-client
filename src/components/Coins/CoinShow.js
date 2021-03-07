@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import withRouter so we have access to the match route prop
 import { withRouter, Redirect, Link } from 'react-router-dom'
 import { coinShow } from '../../api/coins'
 import apiUrl from '../../apiConfig'
@@ -71,7 +70,7 @@ class CoinShow extends Component {
     }
 
     return (
-      <div className='showCoinDiv mx-auto'>
+      <div className='showCoinDiv'>
         <h3 className='coinEdit'>{coin.name}</h3>
         <h3 className='coinType'>{coin.ticker}</h3>
         <h3 className='coinType'>{coin.blockchain}</h3>

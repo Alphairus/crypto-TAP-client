@@ -6,7 +6,6 @@ import messages from '../AutoDismissAlert/messages'
 
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import '../All.scss'
 
 class SignIn extends Component {
   constructor (props) {
@@ -57,34 +56,30 @@ class SignIn extends Component {
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 required
-                type="string"
+                type="email"
                 name="email"
                 value={email}
                 placeholder="Enter email"
                 onChange={this.handleChange}
               />
             </Form.Group>
-            <div className="passForm">
-              <Form.Group controlId="password">
-                <Form.Label>Password</Form.Label>
-                <Form.Control
-                  required
-                  name="password"
-                  value={password}
-                  type="password"
-                  placeholder="Password"
-                  onChange={this.handleChange}
-                />
-              </Form.Group>
-            </div>
-            <div className='tester2'>
-              <Button
-                variant="primary"
-                type="submit"
-              >
-              Submit
-              </Button>
-            </div>
+            <Form.Group controlId="password">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                required
+                name="password"
+                value={password}
+                type="password"
+                placeholder="Password"
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Button
+              variant="primary"
+              type="submit"
+            >
+            Submit
+            </Button>
           </Form>
         </div>
       </div>
