@@ -1,10 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
 
 .navbar{
     background: rgb(0,126,231);
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     // background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     border: 4px groove rgb(0,126,231);
@@ -38,7 +38,7 @@
   background: url(https://picsart.com/i/image-352780600057201);
   min-width: fit-content;
   max-width: 350px;
-  font-family: 'Oi', cursive;
+  font-family: 'Oxygen', sans-serif;
   text-align: center;
   padding-top: 10px;
 
@@ -50,7 +50,7 @@
   text-align: center;
   text-emphasis-color: white;
   text-shadow: 1px 1px white;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Oxygen', sans-serif;
 
 }
 
@@ -82,11 +82,11 @@
 li{
     border: .5px solid rgb(46, 37, 37);
     box-shadow: 0px 0px 16px 0px rgb(15, 10, 14);
-    background: url(https://picsart.com/i/image-352780600057201);
+    background: white;
     text-shadow: -1px -1px 0px rgb(0, 0, 0), 2px 2px 2px whitesmoke;
     color: rgb(20, 16, 17);
     font-size: 20px;
-    font-family: 'Oi', cursive;
+    font-family: 'Oxygen', sans-serif;
     -webkit-text-stroke: 1px #1d0303;
 }
 
@@ -112,7 +112,7 @@ img{
 }
 
 .createh3, h2{
-    font-family: 'Oi', cursive;
+    font-family: 'Oxygen', sans-serif;
     margin-top: 10px;
     font-size: 70px;
     text-shadow: 1px 10px 0px rgb(20, 18, 18);
@@ -124,8 +124,8 @@ img{
 }
 
 input{
-    font-family: 'Orbitron', sans-serif;
-
+    font-family: 'Oxygen', sans-serif;
+    color: rgb(0, 0, 0);
 }
 
 .updateTxt{
@@ -135,4 +135,10 @@ input{
 
 a{
     -webkit-text-stroke: .87px #000000;
+}
+
+.coinEdit, .coinType{
+  background: white;
+  font-family: 'Oxygen', sans-serif;
+  color: rgb(0, 0, 0);
 }

@@ -55,6 +55,4 @@ The app itself is relatively simple. A user signs up on the [website](https://al
 - Deployed API: https://whispering-depths-77462.herokuapp.com/
 
 ## Wireframe
-
-![Landing Page]
 ![Home Page]
