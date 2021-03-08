@@ -55,4 +55,6 @@ The app itself is relatively simple. A user signs up on the [website](https://al
 - Deployed API: https://whispering-depths-77462.herokuapp.com/
 
 ## Wireframe
-![Home Page]
+![Home Page](https://lucid.app/lucidchart/invitations/accept/2ac6912b-4660-4d5f-a958-359ac544b766)
+[![Desktop-Screenshot-2021-03-07-20-07-40-65.png](https://i.postimg.cc/g0HrzZpL/Desktop-Screenshot-2021-03-07-20-07-40-65.png)](https://postimg.cc/NyLQbL5Q)
+[![Desktop-Screenshot-2021-03-07-20-17-46-05.png](https://i.postimg.cc/FsSrFLgF/Desktop-Screenshot-2021-03-07-20-17-46-05.png)](https://postimg.cc/GHcwq956)
